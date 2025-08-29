@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Way2Campus</title>
+    <link rel="shortcut icon" href="img1.jpg" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        form{
+            background-color: rgb(255, 245, 139);
+            /* background-color:#ADD8E6; */
+            width: 30em;
+            height: 26em;
+            padding: 20px;
+            position: relative;
+            top: 22vh;
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            box-shadow: 1px 1px 7px 2px rgba(68, 68, 50, 0.9);
+            border-radius: 10px;  
+            position: relative;
+            left: 30%;
+           
+        }
+
+        body{
+            /* background: linear-gradient(to right,red,orange, yellow, orange, red); */
+            background: linear-gradient(to right,#2E3192, #1BFFFF ),no-repeat;
+        }
+
+        .common{
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .common input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 13px;
+        }
+
+        .common button:hover{
+            background-color: #45a049;
+        }
+
+        .common label{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #head1{
+            margin-bottom: 20px;
+            position: relative;
+            left: 25%;
+        }
+
+        select{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        #travel-option{
+            margin-top: 5px;
+        }
+
+        #travel-option option{
+            color: #757575;
+        }
+
+        .checkbox{
+            margin-top: 10px;
+            /* display: flex;
+            align-items: center; */
+        }
+
+        .common2{
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .travel-options{
+            padding: 10px;
+            margin-left: 20px;
+        }   
+
+        .special1{
+            margin-left: 131px;
+        }
+
+        .special2{
+            margin-left: 27px;
+        }
+
+        .female{
+            margin-left: 20px;
+        }
+
+        .male{
+            margin-left: 10px;
+        }
+
+        .dOption{
+            margin-bottom: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="" id="studentForm">
+        <h1 id="head1">Way2Campus</h1>
+
+        <div class="common">
+             <label for="names">Name :</label>
+        <input type="text" placeholder="Enter your name" name="name" id="names" required>
+        </div>
+       
+        <div id="department-options">
+            <label for="department" class="dOption">Department :</label>
+            <!-- <input type="text" placeholder="Enter the travel medium" name="travel" id="travel" required> -->
+             <select name="department" id="department" required>
+                <option value="" >Select your Department</option>
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="AIDS">AIDS</option>
+                <option value="EEE">EEE</option>
+                <option value="ECE">ECE</option>
+            </select>
+        </div>
+
+        <div class="common2">
+             <label for="gender">Gender :</label>
+        <input type="radio" name="gender" value="male" id="gender" class="male">
+          <label for="gender">Male</label>
+        <input type="radio" name="gender" value="female" id="gender" class="female">
+        <label for="gender">Female</label>
+        </div>
+
+        <div class="common2">
+            <label for="travel">Travel Medium :</label>
+        <input type="checkbox" id="Hosteller" name="Hosteller" class="travel-options">
+        <label for="Hosteller">Hosteller</label>
+        <input type="checkbox" id="CollegeBus" name="CollegeBus" class="travel-options">
+        <label for="CollegeBus">College Bus</label>
+        <br>
+        <input type="checkbox" id="OutBus" name="OutBus" class="travel-options special1">
+        <label for="OutBus">Out Bus</label>
+        <input type="checkbox" id="OwnVehicle" name="OwnVehicle" class="travel-options special2">
+        <label for="OwnVehicle">Own Vehicle</label>
+        </div>
+        <div class="common">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
